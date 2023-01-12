@@ -75,4 +75,19 @@ aside {
     line-height: 45px;
     border-radius: 50%;
     text-align: center;
-  }
+}
+
+
+.search {
+    background-color:#EAEAEA;;
+}
+
+.search-bar {
+    background-color: #ffffff;
+}
+
+input {
+    border: none;
+    outline: none;
+}
+
