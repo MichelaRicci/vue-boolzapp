@@ -38,7 +38,7 @@ aside {
     background-color: #E4DCD4;
 }
 
-#user-bar {
+#user-bar, #contact-bar {
     background-color: #EAEAEA;
 
 }
@@ -93,6 +93,15 @@ input {
 
 
 /* Contact list */
+
+
+/* Chat Window */
+
+.chat {
+    background: url(../img/mine.jpg);
+    background-repeat: repeat;
+    
+}
 
 
 
