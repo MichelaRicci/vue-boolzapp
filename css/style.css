@@ -66,7 +66,6 @@ aside {
     color: #B1B1B1;
 }
 
-
 .fa-bell-slash{
     color: #8EDAFB;;
     background-color: #ffffff;
@@ -78,7 +77,9 @@ aside {
 }
 
 
-.search {
+/* Searchbar */
+
+#search {
     background-color:#EAEAEA;;
 }
 
@@ -90,4 +91,10 @@ input {
     border: none;
     outline: none;
 }
+
+
+/* Contact list */
+
+
+
 
