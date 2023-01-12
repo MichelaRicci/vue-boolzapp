@@ -1,0 +1,11 @@
+.background {
+    height: 100vh;
+
+
+    background: linear-gradient(
+    #019688 0px,
+    #019688 15vh,
+    #D7DBD6 15vh,
+    #D7DBD6 100%)
+}
+
