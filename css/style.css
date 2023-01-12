@@ -39,7 +39,7 @@ aside {
     background-color: #E4DCD4;
 }
 
-.user-bar {
+#user-bar {
     background-color: #EAEAEA;
 
 }
@@ -49,9 +49,30 @@ aside {
     border-radius: 50%;
 }
 
+#notifications {
+    background-color: #8EDAFB;
+    height: 70px;
+}
+
+
+#notification, a {
+    font-size: 12px;
+}
+
 
 /* Icons */
 
 .icons {
     color: #B1B1B1;
 }
+
+
+.fa-bell-slash{
+    color: #8EDAFB;;
+    background-color: #ffffff;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
+    text-align: center;
+  }
