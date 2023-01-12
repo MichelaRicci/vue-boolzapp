@@ -7,5 +7,31 @@
     #019688 15vh,
     #D7DBD6 15vh,
     #D7DBD6 100%)
+
 }
 
+.main-window {
+    width: 80%;
+    height: 95vh;
+    margin: auto;
+    
+
+    border: 1px solid black;
+
+}
+
+aside {
+    height: 100%;
+    width: 35%;
+    border-right: 1px solid #5B5BF7;
+
+    background-color: #fff;
+}
+
+.chat {
+    height: 100%;
+    width: 65%;
+
+
+    background-color: #E4DCD4;
+}
