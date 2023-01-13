@@ -116,6 +116,7 @@ input {
 
 /* Msg */
 
+
 .msg {
     display: flex;
 }
@@ -127,12 +128,12 @@ input {
 
 .sent {
     background-color: #DCF8C1;
-    justify-content: end;
+
 }
   
 .received {
     background-color: #ffffff;
-    justify-content: start;
+
 }
 
 

@@ -114,7 +114,16 @@
     
                     </div>
 
-                    <div id="msg-area" class="d-flex justify-content-between flex-grow-1">
+                    <div id="msg-area" class="justify-content-between flex-grow-1">
+
+                        <div v-for="(message, i) in contacts[currentIndex].messages" class="message-container">
+                            <div class="chat-message mx-5 my-3 py-2 px-3" :class="message.status">
+                              <div class="d-flex justify-content-between"></div>
+                                <div class="text-break">{{ message.text }}</div>
+                              
+                              <div class="small-text-size text-end">{{ message.date }}</div>
+                            </div>
+                        </div>
 
 
 
