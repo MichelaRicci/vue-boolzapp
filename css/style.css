@@ -100,9 +100,45 @@ input {
 .chat {
     background: url(../img/mine.jpg);
     background-repeat: repeat;
-    
+
+}
+
+#msg-area {
+    height: calc(100% - 125px);
 }
 
 
+.msg-input {
+    height: 50px;
+    background-color: #F3EEE9;
+
+}
+
+/* Msg */
+
+.msg {
+    display: flex;
+}
+
+.sent,.received {
+  border-radius: 15px;
+  padding: 5px;
+}
+
+.sent {
+    background-color: #DCF8C1;
+    justify-content: end;
+}
+  
+.received {
+    background-color: #ffffff;
+    justify-content: start;
+}
+
+
+ul {
+
+
+}
 
 
