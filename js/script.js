@@ -40,7 +40,7 @@ const app = Vue.createApp({
             name: 'Fabio',
             avatar: '_2',
             visible: true,
-            
+
             messages: [{
               date: '20/03/2020 16:30:00',
               text: 'Ciao come stai?',
@@ -116,7 +116,8 @@ const app = Vue.createApp({
   
     setCurrentIndex(index) {
       this.currentIndex = index;
-    }
+    },
+
   }
   
 }).mount('#root');
