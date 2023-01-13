@@ -10,12 +10,13 @@ const app = Vue.createApp({
             name: 'Nome Utente',
             avatar: '_io'
         },
-        
+
         contacts: [
           {
             name: 'Michele',
             avatar: '_1',
             visible: true,
+
             messages: [{
               date: '10/01/2020 15:30:55',
               text: 'Hai portato a spasso il cane?',
@@ -32,11 +33,14 @@ const app = Vue.createApp({
               status: 'received'
             }
             ],
+
           },
+
           {
             name: 'Fabio',
             avatar: '_2',
             visible: true,
+            
             messages: [{
               date: '20/03/2020 16:30:00',
               text: 'Ciao come stai?',
