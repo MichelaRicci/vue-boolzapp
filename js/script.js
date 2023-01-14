@@ -132,8 +132,18 @@ const app = Vue.createApp({
         this.contacts[this.currentIndex].messages.push(newMessageItem);
         this.newMessage = ''
 
+        setTimeout(() => {
+          let autoMessage = {
+          text : 'Ok',
+          status : 'received'
+          }
+          this.contacts[this.currentIndex].messages.push(autoMessage);
+        }, 1000);
+
       }
     }
+
+
 
   }
   
