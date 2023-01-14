@@ -6,6 +6,9 @@ const app = Vue.createApp({
 
       return{
           currentIndex: 0,
+
+          newMessage: '',
+
         user: {
             name: 'Nome Utente',
             avatar: '_io'
@@ -96,6 +99,7 @@ const app = Vue.createApp({
             ],
           },
         ]
+
       }
     },
 
@@ -117,6 +121,19 @@ const app = Vue.createApp({
     setCurrentIndex(index) {
       this.currentIndex = index;
     },
+
+    addNewMessage() {
+      let newMessageItem = {
+        text : this.newMessage,
+        status : 'sent'
+      }
+
+      if (this.newMessage) {
+        this.contacts[this.currentIndex].messages.push(newMessageItem);
+        this.newMessage = ''
+
+      }
+    }
 
   }
   
