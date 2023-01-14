@@ -122,17 +122,6 @@ input {
 }
 
 
-.message-container.sent {
-    justify-content: flex-end;
-
-}
-
-.message-container.received {
-    justify-content: flex-start;
-
-}
-
-
 .message-container.message p {
     margin-bottom: 0;
 }
@@ -152,11 +141,13 @@ input {
 .sent {
     background-color: #DCF8C1;
 
+    align-self: flex-end;
 }
   
 .received {
     background-color: #ffffff;
 
+    align-self: start;
 }
 
 
