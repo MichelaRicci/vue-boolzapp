@@ -76,7 +76,7 @@
 
                 <div id="contacts" class="overflow-auto">
                     <ul class="p-0">
-                        <li v-for="contact in contacts"  @click="setCurrentIndex(index)" class="d-flex justify-content-between align-items-center p-2">
+                        <li v-for="(contact, i) in contacts"  @click="setCurrentIndex(i)" class="d-flex justify-content-between align-items-center p-2">
                             <div class="d-flex align-items-center">
                                 <div>
                                     <img class="avatar" :src="`img/avatar${contact.avatar}.jpg`" :alt="contact.name">
@@ -118,11 +118,13 @@
                     
                     <div id="msg-area" class="justify-content-between flex-grow-1 overflow-auto">
                         <ul>
-                            <li v-for="(message, i) in contacts[currentIndex].messages" class="message-container" @click="setCurrentIndex(i)">
-                                <div class="mx-5 my-3 py-2 px-3 message" :class="message.status">
-                                    <p class="text-break">{{ message.text }}</p>
+                            <li v-for="(message, i) in contacts[currentIndex].messages" @click="currentChat(i)" class="message-container">
+                                <div class="mx-5 my-3 py-2 px-3 message d-flex" :class="message.status">
+                                    <div>
+                                        <p class="text-break">{{ message.text }}</p>
                                 
-                                    <div class="text-end"><small class="text-muted fw-light">{{ message.date }}</small></div>
+                                        <div class="text-end"><small class="text-muted fw-light">{{ message.date }}</small></div>
+                                    </div>
                                 </div>
                             </li>
                         </ul>

@@ -122,16 +122,18 @@ input {
 }
 
 
-.message.sent {
+.message-container.sent {
     justify-content: flex-end;
+
 }
 
-.message.received {
+.message-container.received {
     justify-content: flex-start;
+
 }
 
 
-.message-container .message p {
+.message-container.message p {
     margin-bottom: 0;
 }
 
