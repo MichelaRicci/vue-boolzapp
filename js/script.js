@@ -125,11 +125,11 @@ const app = Vue.createApp({
     addNewMessage() {
       let newMessageItem = {
         text : this.newMessage,
-        status : 'sent'
+        status : 'sent',
       }
 
       if (this.newMessage) {
-        this.contacts[this.currentIndex].messages.push(newMessageItem);
+        this.currentChat.push(newMessageItem);
         this.newMessage = ''
 
         setTimeout(() => {
@@ -137,7 +137,7 @@ const app = Vue.createApp({
           text : 'Ok',
           status : 'received'
           }
-          this.contacts[this.currentIndex].messages.push(autoMessage);
+          this.currentChat.push(autoMessage);
         }, 1000);
 
       }
