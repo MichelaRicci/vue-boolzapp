@@ -114,9 +114,11 @@ const app = Vue.createApp({
       return this.currentContact.messages;
     },
 
-    contactsFilter(){
-      return this.contacts.filter(contact => contact.name().toLowerCase().includes(this.search.toLowerCase()));
-    }
+    filteredContacts(){
+      return this.contacts.map(contact => {
+        contact.visible = contact.name.toLowerCase().includes(this.search.toLowerCase());
+        return contact;
+      })},
 
   },
 
