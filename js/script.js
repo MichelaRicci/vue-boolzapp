@@ -9,6 +9,8 @@ const app = Vue.createApp({
 
           newMessage: '',
 
+          search: '',
+
         user: {
             name: 'Nome Utente',
             avatar: '_io'
@@ -110,7 +112,12 @@ const app = Vue.createApp({
 
     currentChat() {
       return this.currentContact.messages;
+    },
+
+    contactsFilter(){
+      return this.contacts.filter(contact => contact.name().toLowerCase().includes(this.search.toLowerCase()));
     }
+
   },
 
   methods: {
@@ -141,10 +148,8 @@ const app = Vue.createApp({
         }, 1000);
 
       }
-    }
-
-
-
+    },
+      
   }
   
 }).mount('#root');
