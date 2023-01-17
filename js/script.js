@@ -1,5 +1,7 @@
 console.log('Vue Ok');
 
+const dt = luxon.DateTime;
+
 const app = Vue.createApp({
 
     data(){
@@ -135,6 +137,7 @@ const app = Vue.createApp({
       let newMessageItem = {
         text : this.newMessage,
         status : 'sent',
+        date : this.getCurrentMoment()
       }
 
       if (this.newMessage) {
@@ -144,12 +147,17 @@ const app = Vue.createApp({
         setTimeout(() => {
           let autoMessage = {
           text : 'Ok',
-          status : 'received'
+          status : 'received',
+          date :  this.getCurrentMoment()
           }
           this.currentChat.push(autoMessage);
         }, 1000);
 
       }
+    },
+
+    getCurrentMoment() {
+      return dt.now().setLocale('it').toLocaleString(dt.DATETIME_SHORT_WITH_SECONDS);
     },
       
   }
